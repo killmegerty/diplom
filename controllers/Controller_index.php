@@ -10,8 +10,4 @@ class Controller_index extends Controller {
         $this->registry->set('users', $users);
     }
 
-    public function login() {
-        exit(123);
-    }
-
 }

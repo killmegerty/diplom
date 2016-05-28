@@ -1,13 +1,23 @@
 <?php
 
+require 'models/Model_user.php';
+
 class Controller_user extends Controller {
 
     public function index() {
-        $this->registry->set('123','sadasd');
     }
 
     public function login() {
-        echo 123;
+        $modelUser = new Model_user();
+        $user = $modelUser->getUserByLogin($_POST['login']);
+        
+        if ($user) {
+            if ($user['password'] === $_POST['password']) {
+                $_SESSION['user'] = $user;
+            }
+        }
+        
+        $this->redirect('/');
     }
 
 }

@@ -14,5 +14,6 @@ class Model {
             die('Can\'t connect to database ' . $this->db->connect_errno . ') '
                     . $this->db->connect_error);
         }
+        $this->db->query("SET NAMES UTF8;");
     }
 }
