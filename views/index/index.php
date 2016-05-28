@@ -6,5 +6,13 @@
         <input type="password" name="password">
         <button type="submit">Log In</button>
     </form>
-    
+    <hr>
+<?php else : ?>
+    <p>
+        <a href="/index/tutorial">Пройти обучение</a>
+    </p>
+    <p>
+        <a href="/index/test">Пройти контроль знаний</a>
+    </p>
 <?php endif; ?>
+

@@ -20,4 +20,10 @@ class Controller_user extends Controller {
         $this->redirect('/');
     }
 
+    public function logout() {
+        session_destroy();
+
+        $this->redirect('/');
+    }
+
 }

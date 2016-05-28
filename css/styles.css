@@ -1,28 +1,52 @@
 * {
     font-family: Calibri;
 }
+
 fieldset { 
     margin-bottom: 15px;
     padding: 10px;
 }
+
 legend {
     padding: 0px 3px;
     font-weight: bold;
     font-variant: small-caps;
 }
+
 label {
     width: 130px;
     display: inline-block;
     vertical-align: top;
     margin: 6px;
 }
+
 input, textarea {
     width: 249px
 }
+
 input[type=submit] {
     width: 170px;
     padding: 10px;
 }
+
 .error {
     border:1px solid red;
+}
+
+.top-menu p {
+    display: inline-block;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.question-container {
+    border: solid 1px black;
+    margin-bottom: 10px;
+    padding: 5px;
 }

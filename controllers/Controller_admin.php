@@ -36,5 +36,9 @@ class Controller_admin extends Controller {
         $this->registry->set('professions', $professions);
         $this->registry->set('roles', $roles);
     }
+    
+    public function add_question() {
+        
+    }
 
 }
